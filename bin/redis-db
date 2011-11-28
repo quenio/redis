@@ -1,0 +1,5 @@
+#!/bin/sh
+
+source redis-vars
+
+ls -l $REDIS_DB

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+source redis-vars
+
+mate $REDIS_CONF/local.conf

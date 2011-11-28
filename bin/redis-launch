@@ -1,0 +1,11 @@
+#!/bin/sh
+
+source redis-vars
+
+redis-server - <<EOF
+pidfile $REDIS_HOME/redis.pid
+dir $REDIS_HOME/db
+vm-swap-file $REDIS_HOME/redis.swap
+include $REDIS_CONF/local.conf
+EOF
+
